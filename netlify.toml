@@ -1,4 +1,6 @@
 [build]
+  # Plain static site: override the leftover `jekyll build` command set in the Netlify UI.
+  command = "echo 'No build step: static site'"
   publish = "."
 
 # Old Jekyll pages now live as sections of the single page.
