@@ -1,6 +1,18 @@
 [build]
-  command = "jekyll build"
-  publish = "_site"
+  publish = "."
 
-[build.environment]
-  JEKYLL_ENV = "production"
+# Old Jekyll pages now live as sections of the single page.
+[[redirects]]
+  from = "/about/*"
+  to = "/#about"
+  status = 301
+
+[[redirects]]
+  from = "/what-we-treat/*"
+  to = "/#treat"
+  status = 301
+
+[[redirects]]
+  from = "/contact/*"
+  to = "/#visit"
+  status = 301

@@ -1,5 +1,3 @@
 # Physical Therapy Website
 
-This is a Jekyll site deployed to Netflify, based on the excellent [Alembic theme](https://github.com/daviddarnes/alembic-kit) with some styles overridden.
-
-Thanks to Simon Berger on Unsplash for the [cover image](https://unsplash.com/photos/twukN12EN7c)
+Single-page static site (`index.html`) deployed to Netlify. No build step.
