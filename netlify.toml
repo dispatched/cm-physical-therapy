@@ -1,7 +1,8 @@
 [build]
-  # Plain static site: override the leftover `jekyll build` command set in the Netlify UI.
-  command = "echo 'No build step: static site'"
-  publish = "."
+  # Static site copied into _site, the publish directory the Netlify UI and
+  # extensions still expect from the old Jekyll setup.
+  command = "rm -rf _site && mkdir _site && cp index.html _site/"
+  publish = "_site"
 
 # Old Jekyll pages now live as sections of the single page.
 [[redirects]]
